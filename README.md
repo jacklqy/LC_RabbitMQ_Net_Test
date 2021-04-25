@@ -18,6 +18,8 @@ RabbitMq优先级
 ![image](https://user-images.githubusercontent.com/26539681/115988042-65931380-a5ea-11eb-989d-8206fa10a405.png)
 
 集群
+普通集群：比较鸡肋，无法实现高可用。有主从关系，队列是存放在主节点，其它节点只存了队列结构，只要主节点挂了，就完了。
+镜像集群(镜像队列---推荐使用)：绝对的高可用，没有主从关系，所有节点都同步队列，任意节点挂了，还可以继续使用。
 ![image](https://user-images.githubusercontent.com/26539681/115988073-9410ee80-a5ea-11eb-939d-57bd84d09aa0.png)
 ![image](https://user-images.githubusercontent.com/26539681/115988143-ece08700-a5ea-11eb-918f-dc037ca80d80.png)
 
