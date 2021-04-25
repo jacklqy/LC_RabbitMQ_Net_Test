@@ -23,3 +23,8 @@ RabbitMq优先级
 ![image](https://user-images.githubusercontent.com/26539681/115988073-9410ee80-a5ea-11eb-939d-57bd84d09aa0.png)
 ![image](https://user-images.githubusercontent.com/26539681/115988143-ece08700-a5ea-11eb-918f-dc037ca80d80.png)
 
+//如何保证消息一定会从生产端到消费端呢？---》分布式事务，基于本地消息表做分布式事务的一种手段。
+//1、消息持久化
+//2、生产端消息确认
+//3、消费端消息确认
+
